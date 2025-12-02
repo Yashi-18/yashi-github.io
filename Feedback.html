@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="logo">
+      <img width="80" src="images/logo.webp" alt="logo" />
+      <h1 class="h1">HSI Boarding School Purworejo</h1>
+      <h3 class="h3">Website Profil Sederhana — Kelas X</h3>
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="Jadwal.html">Jadwal</a>
+        <a href="Galeri.html">Galeri</a>
+        <a href="Feedback.html" class="active">Feedback</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h3 id="h3" class="section-title">Formulir Kotak & Saran</h3>
+        <p>
+          Berikan Masukan untuk web ini, agar bisa lebih berkembang ke depannya
+        </p>
+        <form>
+          <!-- input : kolom input serbaguna (pendek) -->
+          <!-- tips shortcut: input;[type nya] -->
+          <label>Nama Anda (Opsional):</label>
+          <input type="text" placeholder="Tulis nama Anda" /><br>
+<br>
+          <label>Email Anda:</label>
+          <input type="email" placeholder="nama@email.com" required /><br>
+<br>
+          <label>Rating Kepuasan Website (Skala 1–10):</label>
+          <input
+            type="number"
+            min="1"
+            max="10"
+            placeholder="Masukkan angka 1 hingga 10"
+            required
+          />
+          <br /><br />
+          <label>Rekomendasi Website Ini?</label><br /><br />
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="rekom" value="ya" /> Ya, Sangat</label
+            >
+            <label
+              ><input type="radio" name="rekom" value="mungkin" /> Mungkin
+              Saja</label
+            >
+            <label
+              ><input type="radio" name="rekom" value="tidak" /> Tidak</label
+            >
+          </div>
+          <br />
+
+          <div>
+            <label>Topik yang paling menarik:</label><br><br>
+            <div class="checkbox-group">
+              <label><input type="checkbox" value="biodata" /> Biodata</label>
+              <label><input type="checkbox" value="jadwal" /> Jadwal</label>
+              <label><input type="checkbox" value="galeri" /> Galeri</label>
+            </div>
+          </div>
+          <br>
+          <div>
+            <label>Saran Pengembangan di Bidang:</label>
+            <select>
+              <option>-- Pilih Bidang --</option>
+              <option>Desain Tampilan</option>
+              <option>Konten</option>
+              <option>Fitur Interaktif</option>
+              <option>Kinerja Website</option>
+            </select>
+          </div><br>
+
+          <label>Pesan/Saran Lengkap:</label>
+          <textarea
+            rows="5"
+            placeholder="tulis lah pesan dan saran anda disini"
+          ></textarea>
+
+          <div class="button-group">
+            <button type="reset" class="btn-secondary">Atur Ulang</button>
+            <button type="submit" class="btn-primary">Kirim Feedback</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
